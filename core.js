@@ -12,7 +12,7 @@ var animatedCharacterInput = (function() {
       var storedText = "";
       
       var keyDowns = Rx.Observable.fromEvent($input, 'keydown');
-      var inputChange = Rx.Observable.fromEvent($('#textInput'), 'input');
+      var inputChange = Rx.Observable.fromEvent($('#textInput'), 'select');
 
       var actions = Rx.Observable
           .merge(keyDowns)
@@ -28,7 +28,7 @@ var animatedCharacterInput = (function() {
           })());
 
       keyDowns.subscribe(function(e) {
-          console.log(e);
+          // console.log(e);
           // console.log(e.type, e.key || e.which, e.keyIdentifier);
           var character = ""+e.keyIdentifier+"";
           var val = String.fromCharCode(parseInt(event.keyIdentifier.substr(2), 16)).toLowerCase();
