@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="animate.css"></link>
+<style>
+
+/*#textInput { margin: 30px; }*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.animatedInput {
+  
+  position: absolute;
+  /*padding: 30px;*/
+
+  /*border-bottom: 1px solid #ccc;*/
+  display: flex;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*transition: all 0.3s;*/
+  outline: 0;
+  /*padding: 15px;*/
+  /*text-align:center;*/
+  width: 240px;
+  overflow: hidden;
+  border-bottom: 1px solid #444;
+  height: 30px;
+  font-size: 24px;
+  /*margin: 0 auto;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto';
+
+}
+
+.animatedInput div {
+
+  float: left;
+  font-size: 1em;
+  pointer-events: none;
+  color: #444;
+  /*transition: all 0.1s !important;*/
+
+}
+
+.animatedInput #textInput {
+
+  position: absolute;
+  border: 0px;
+  left: 0px;
+  top: 0px;
+  color:#444;
+  -webkit-text-fill-color:transparent;
+  /*margin: 15px;*/
+  font-size: 1em;
+  font-family: 'Roboto';
+  width: 100%;
+  background: transparent;
+  outline: 0;
+  /*text-align: center;*/
+
+}
+
+</style>
+<!-- <textarea id="textInput"></textarea> -->
+<!-- <input id="textInput" type="text"></input> -->
+<!-- <div class="animatedInput">
+  <input id="textInput" type="text" maxlength="24"></input>
+  <div class="start"></div>
+</div> -->
+<character-input animation="slideInUp"></character-input>
+<h6>Please don't ever use this</h6>
+<script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs-jquery/1.1.6/rx.jquery.js"></script>
+<script src="core.js"></script>
